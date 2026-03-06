@@ -10,7 +10,7 @@ on:
       - main
     types: [ closed ]
 jobs:
-  hello:
+  LeviPipeline:
     runs-on: ubuntu-latest
     steps:
       # Checkout the repository
