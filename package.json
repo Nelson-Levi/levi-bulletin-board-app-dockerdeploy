@@ -1,0 +1,27 @@
+{
+  "name": "bulletin-board-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js",
+  "main": "server.js",
+  "author": "meadowbees",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bootstrap": "^3.4.1",
+    "ejs": "^2.7.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.21.2",
+    "method-override": "^2.3.10",
+    "morgan": "^1.10.0",
+    "vue": "^1.0.28",
+    "vue-resource": "^0.1.17"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
