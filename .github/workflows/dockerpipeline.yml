@@ -39,6 +39,14 @@ jobs:
         run: |
           docker build -t nellevi/bulletin-board-app:latest .
           
+      - name: Test the docker image I made
+        run: |
+          docker run -d -p 3000:3000 --name bulletin-board-app-test nellevi/bulletin-board-app:latest
+          sleep 10 
+          curl -f http://localhost:3000 || exit 1 # Check if the app is responding
+          docker stop bulletin-board-app-test
+          docker rm bulletin-board-app-test
+
       - name: Log in to Docker Hub, so I can push the image there
         uses: docker/login-action@v3
         with:
