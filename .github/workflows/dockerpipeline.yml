@@ -1,5 +1,4 @@
 name: LEVI'S DOCKER PIPELINE
-# I made this :)
 on:
   workflow_dispatch:
   push:
